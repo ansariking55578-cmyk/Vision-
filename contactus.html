@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+</head>
+<style>
+      .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 13px;
+        }
+
+        button {
+            border: none;
+            padding: 12px 35px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+          button:hover {
+            transform: scale(1.05);
+        }
+
+        #helpSection {
+            display: none;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+        }
+
+        #helpSection h2 {
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+         .email-btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            word-break: break-word;
+        }
+
+        .email-btn:hover {
+            background: #0056b3;
+        }
+
+        #noMessage {
+            display: none;
+            margin-top: 25px;
+            color: #555;
+            font-size: 17px;
+        }
+</style>
+
+<body>
+
+    <div>
+
+        <h1 style="margin-left: 30%;">Contact Us</h1>
+
+        <p>
+            <h2>Welcome to Ansariking55578! </h2>
+            <br>
+             If you need any help regarding
+            9th Class Math notes or study <br><br> materials, we are here to help you.
+        </p>
+
+        <br><br><br>
+        <p style="margin-left: 35%;"> Do you need help?</p>
+
+        <div style="margin-top: 5%;" class="buttons">
+            <button class="yes-btn" onclick="showHelp()">Yes</button>
+            <button class="no-btn" onclick="showNoMessage()">No</button>
+        </div>
+
+
+        <!-- Help Section -->
+        <div id="helpSection">
+            <h2>We're Here to Help!</h2>
+
+            <p>
+                If you have any questions or suggestions, feel free to contact us.
+            </p>
+
+            <a class="email-btn"
+               href="mailto:ansariking55578@gmail.com?subject=Help Request - Ansariking55578">
+                📧 ansariking55578@gmail.com
+            </a>
+        </div>
+
+
+        <!-- No Message -->
+        <div id="noMessage">
+            😊 No problem! Keep studying and good luck with your exams!
+        </div>
+
+    </div>
+
+
+    <script>
+        function showHelp() {
+            document.getElementById("helpSection").style.display = "block";
+            document.getElementById("noMessage").style.display = "none";
+        }
+
+        function showNoMessage() {
+            document.getElementById("noMessage").style.display = "block";
+            document.getElementById("helpSection").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
