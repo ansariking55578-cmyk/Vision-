@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CLASSES</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: #007b5e;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 16px;
+        }
+
+        nav {
+            background: white;
+            padding: 13px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        nav a {
+            color: #007b5e;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: #00563f;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .page-title h2 {
+            color: #007b5e;
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .page-title p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .book-card {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .book-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .book-card h3 {
+            color: #007b5e;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .book-card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .book-btn {
+            display: inline-block;
+            background: #007b5e;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .book-btn:hover {
+            background: #00563f;
+        }
+
+        footer {
+            background: #007b5e;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 50px;
+        }
+
+        .footer-links {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 26px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+                font-size: 14px;
+            }
+
+            .container {
+                margin: 25px auto;
+                padding: 0 12px;
+            }
+
+            .books-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+
+            .book-card {
+                padding: 28px 15px;
+            }
+
+            .book-card h3 {
+                font-size: 24px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="page-title">
+            <h2>Books</h2>
+            <p>Choose your class to explore books and study materials.</p>
+        </div>
+
+        <div class="books-grid">
+
+            <!-- 9th Class -->
+            <div class="book-card">
+                <div class="book-icon">📚</div>
+                <h3>9th Class</h3>
+                <p>Books and study materials for 9th class students.</p>
+                <a href="./home.html" class="book-btn">View Books</a>
+            </div>
+
+            <!-- 10th Class -->
+            <div class="book-card">
+                <div class="book-icon">📚</div>
+                <h3>10th Class</h3>
+                <p>Books and study materials for 10th class students.</p>
+                <a href="10th-books.html" class="book-btn">View Books</a>
+                <p style="color: red; font-weight: bold; margin-top: 15px;">
+                    Coming Soon
+                </p>
+            </div>
+
+            <!-- 11th Class -->
+            <div class="book-card">
+                <div class="book-icon">📚</div>
+                <h3>11th Class</h3>
+                <p>Books and study materials for 11th class students.</p>
+                <a href="11th-books.html" class="book-btn">View Books</a>
+                 <p style="color: red; font-weight: bold; margin-top: 15px;">
+                    Coming Soon
+                </p>
+            </div>
+
+            <!-- 12th Class -->
+            <div class="book-card">
+                <div class="book-icon">📚</div>
+                <h3>12th Class</h3>
+                <p>Books and study materials for 12th class students.</p>
+                <a href="12th-books.html" class="book-btn">View Books</a>
+                 <p style="color: red; font-weight: bold; margin-top: 15px;">
+                    Coming Soon
+                </p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+
+        <p>
+            © 2026 Government Jobs. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
